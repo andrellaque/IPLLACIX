@@ -1,0 +1,213 @@
+/* --- Layout general --- */
+.catalogo-layout {
+    display: flex;
+    justify-content: center; /* Centra sidebar + productos */
+    align-items: flex-start;
+    gap: 40px;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 32px;
+}
+
+/* --- Sidebar filtros --- */
+.filtros-sidebar {
+    width: 260px; /* Evita que empuje productos */
+    background-color: #f5f5f5;
+    padding: 32px;
+    border-radius: 15px;
+    height: fit-content;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+.filtro-grupo {
+    margin-bottom: 30px;
+}
+
+.filtro-grupo h3 {
+    color: #007bff;
+    margin-bottom: 12px;
+    font-size: 20px;
+}
+
+.filtro-opcion {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 10px 0;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 6px;
+    transition: background-color 0.3s ease;
+}
+
+.filtro-opcion:hover {
+    background-color: #e9ecef;
+}
+
+.filtro-opcion input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+}
+
+/* --- Banner oferta --- */
+.banner-promo {
+    background: linear-gradient(135deg, #007bff, #007bff);
+    color: white;
+    padding: 24px;
+    border-radius: 12px;
+    text-align: center;
+    margin-top: 20px;
+    box-shadow: 0 4px 12px rgba(255, 107, 107, 0.25);
+}
+
+.banner-promo h3 {
+    margin-bottom: 8px;
+    font-size: 22px;
+}
+
+.banner-promo p {
+    margin-bottom: 16px;
+    opacity: 0.9;
+}
+
+.btn-promo {
+    background-color: white;
+    color: #007bff;
+    padding: 12px 24px;
+    border-radius: 25px;
+    font-weight: bold;
+    transition: 0.3s;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.btn-promo:hover {
+    transform: scale(1.05);
+    background-color: #f9f9f9;
+}
+
+/* --- Productos --- */
+.productos-content {
+    flex: 1; /* Expansión sin empujar */
+    background: white;
+}
+
+.productos-content h2 {
+    text-align: center;
+    margin-bottom: 32px;
+    font-size: 32px;
+    color: #007bff;
+    font-weight: 700;
+}
+
+/* Grid productos */
+.productos-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columnas */
+    gap: 40px;
+    justify-items: center; /* Centra cada card */
+}
+
+/* Card */
+.producto-card {
+    background: white;
+    border-radius: 16px;
+    padding: 16px 14px;
+    text-align: center;
+    box-shadow: 0 4px 14px rgba(0,0,0,0.08);
+    border: 1px solid #e6e6e6;
+    transition: 0.25s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+.producto-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 24px rgba(0,0,0,0.12);
+}
+
+/* Imagen */
+.producto-imagen {
+    height: 220px;
+    margin-bottom: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.producto-imagen img {
+    max-width: 90%;
+    max-height: 200px;
+    object-fit: contain;
+}
+
+/* Info */
+.producto-modelo {
+    font-size: 22px;
+    color: #222;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.producto-especificaciones {
+    color: #555;
+    font-size: 15px;
+    margin-bottom: 18px;
+}
+
+.producto-precio {
+    font-size: 28px;
+    color: #007bff;
+    font-weight: 800;
+    margin-bottom: 22px;
+}
+
+/* Botón */
+.btn-comprar {
+    background-color: #007bff;
+    color: white;
+    padding: 14px;
+    font-size: 18px;
+    border-radius: 10px;
+    width: 100%;
+    cursor: pointer;
+    transition: 0.25s;
+}
+
+.btn-comprar:hover {
+    background-color: #005fcc;
+    transform: scale(1.03);
+}
+
+/* --- Responsive --- */
+@media (max-width: 900px) {
+    .catalogo-layout {
+        gap: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .catalogo-layout {
+        flex-direction: column;
+        padding: 16px;
+    }
+
+    .filtros-sidebar {
+        order: 2;
+        width: 100%;
+    }
+
+    .productos-content {
+        order: 1;
+    }
+
+    .productos-grid {
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+        gap: 20px;
+    }
+
+    .producto-imagen {
+        height: 180px;
+    }
+}

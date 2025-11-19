@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IPLLACIX - Contacto</title>
+
+    <!-- CSS GLOBAL -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- CSS CONTACTO -->
+    <link rel="stylesheet" href="contacto.css">
+</head>
+
+<body>
+
+    <!-- BARRA SUPERIOR -->
+    <div class="top-bar">
+        <p>Bienvenido a IPLLACIX</p>
+
+        <div class="top-icons">
+            <img src="imagenes/fb.jpg" alt="Facebook">
+            <img src="imagenes/tt.jpg" alt="Twitter">
+            <img src="imagenes/ig.jpg" alt="Instagram">
+        </div>
+    </div>
+
+    <!-- HEADER -->
+    <header class="header-main">
+
+        <!-- LOGO -->
+        <div class="header-logo">
+            <a href="index.html">
+                <img src="imagenes/ipllacix.png" alt="IPLLACIX">
+            </a>
+        </div>
+
+        <!-- BUSCADOR -->
+        <div class="header-search">
+            <img src="imagenes/lupa.jpg" class="search-icon" alt="Buscar">
+            <input type="text" placeholder="Buscar productos...">
+        </div>
+
+        <!-- MENÚ -->
+        <nav class="header-menu">
+            <a href="index.html">INICIO</a>
+            <a href="catalogo.html">CATÁLOGO</a>
+            <a href="contacto.html" class="active-page">CONTACTO</a>
+        </nav>
+
+        <!-- CARRITO -->
+        <div class="header-cart">
+            <span class="cart-amount">S/ 0.00</span>
+            <div class="cart-icon-container">
+                <img src="imagenes/carrito.png" class="cart-icon" alt="Carrito">
+                <span class="cart-count">0</span>
+            </div>
+        </div>
+
+    </header>
+
+    <!-- CONTENIDO PRINCIPAL -->
+    <div class="contact-layout">
+
+        <!-- IZQUIERDA -->
+        <div class="contact-main">
+
+            <!-- FORMULARIO -->
+            <section class="form-box">
+                <h2>📧 Escríbenos</h2>
+
+                <form id="formContacto">
+
+                    <div class="form-group">
+                        <label for="nombre">Nombre completo *</label>
+                        <input type="text" id="nombre" name="nombre" required placeholder="Tu nombre y apellidos">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Correo electrónico *</label>
+                        <input type="email" id="email" name="email" required placeholder="tucorreo@ejemplo.com">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="telefono">Teléfono</label>
+                        <input type="tel" id="telefono" name="telefono" placeholder="+51 999 999 999">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="asunto">Asunto *</label>
+                        <input type="text" id="asunto" name="asunto" required placeholder="Motivo del mensaje">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="mensaje">Mensaje *</label>
+                        <textarea id="mensaje" name="mensaje" rows="5" required placeholder="Escribe tu mensaje aquí..."></textarea>
+                    </div>
+
+                    <button type="submit" class="btn-submit">Enviar mensaje</button>
+
+                </form>
+            </section>
+
+            <!-- INFO -->
+            <section class="info-box">
+                <h2>📍 Información de Contacto</h2>
+
+                <p>Ipllacix es una tienda especializada en celulares y tecnología móvil. Estamos aquí para ayudarte con compras, consultas o soporte técnico.</p>
+
+                <div class="info-item">
+                    <h3>Dirección</h3>
+                    <p>Arica 646, Chiclayo, Perú</p>
+                </div>
+
+                <div class="info-item">
+                    <h3>Teléfono</h3>
+                    <p>+51 942 147 402</p>
+                </div>
+
+                <div class="info-item">
+                    <h3>Email</h3>
+                    <p>ipllacix@gmail.com</p>
+                </div>
+
+            </section>
+
+        </div>
+
+        <!-- SIDEBAR -->
+        <aside class="sidebar-box">
+
+            <h3>Atención al Cliente</h3>
+
+            <div class="sidebar-section">
+                <h4>Horarios</h4>
+                <div class="row"><span>Lunes a Viernes</span><span>9:00 - 20:00</span></div>
+                <div class="row"><span>Sábados</span><span>9:00 - 18:00</span></div>
+                <div class="row"><span>Domingos</span><span>10:00 - 16:00</span></div>
+            </div>
+
+            <div class="sidebar-section whatsapp-box">
+                <h4>WhatsApp</h4>
+                <p class="whatsapp-num">+51 942147402</p>
+                <a href="https://wa.me/942147402" class="btn-whatsapp" target="_blank">Chatear ahora</a>
+            </div>
+
+        </aside>
+
+    </div>
+
+    <!-- MAPA -->
+    <div class="map-section">
+        <h3>Nuestra Ubicación</h3>
+
+        <div class="map-container">
+
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!4v1763515233114!6m8!1m7!1swyrUVDaXf8gmB3va_Mqrlg!2m2!1d-6.766298403108742!2d-79.84248352926859!3f194.64!4f-0.269999999999996!5f0.7820865974627469"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-content">
+
+            <div class="redes-sociales">
+                <h4>Síguenos en redes sociales</h4>
+
+                <div class="social-icons">
+                    <a href="#" class="social-link"><img src="imagenes/fb.jpg"> Facebook</a>
+                    <a href="#" class="social-link"><img src="imagenes/ig.jpg"> Instagram</a>
+                    <a href="#" class="social-link"><img src="imagenes/tt.jpg"> TikTok</a>
+                </div>
+            </div>
+
+            <div class="footer-info">
+                <p>© 2025 IPLLACIX. Todos los derechos reservados.</p>
+                <p>Tu tienda de confianza en tecnología móvil</p>
+            </div>
+
+        </div>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IPLLACIX - Inicio</title>
+
+    <!-- CSS GLOBAL -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- CSS INICIO -->
+    <link rel="stylesheet" href="inicio.css">
+</head>
+
+<body>
+
+    <!-- BARRA SUPERIOR -->
+    <div class="top-bar">
+        <p class="bienvenida">Bienvenido a IPLLACIX</p>
+
+        <div class="top-icons">
+            <img src="imagenes/fb.jpg" alt="Facebook">
+            <img src="imagenes/tt.jpg" alt="Twitter">
+            <img src="imagenes/ig.jpg" alt="Instagram">
+        </div>
+    </div>
+
+    <!-- HEADER -->
+    <header class="header-main">
+
+        <!-- LOGO -->
+        <div class="header-logo">
+            <a href="index.html">
+                <img src="imagenes/ipllacix.png" alt="IPLLACIX">
+            </a>
+        </div>
+
+        <!-- BUSCADOR -->
+        <div class="header-search">
+            <img src="imagenes/lupa.jpg" class="search-icon" alt="Buscar">
+            <input type="text" placeholder="Buscar productos...">
+        </div>
+
+        <!-- MENÚ -->
+        <nav class="header-menu">
+            <a href="index.html">INICIO</a>
+            <a href="catalogo.html">CATÁLOGO</a>
+            <a href="contacto.html">CONTACTO</a>
+        </nav>
+
+        <!-- CARRITO -->
+        <div class="header-cart">
+            <span class="cart-amount">S/ 0.00</span>
+            <div class="cart-icon-container">
+                <img src="imagenes/carrito.png" class="cart-icon" alt="Carrito">
+                <span class="cart-count">0</span>
+            </div>
+        </div>
+
+    </header>
+
+    <!-- CONTENIDO -->
+    <div class="main-content">
+
+        <main class="content">
+
+            <!-- CARRUSEL -->
+            <section class="carousel">
+                <div class="carousel-container">
+                    <div class="slide active"><img src="imagenes/carru1.jpg" alt="Imagen 1"></div>
+                    <div class="slide"><img src="imagenes/carru2.jpg" alt="Imagen 2"></div>
+                    <div class="slide"><img src="imagenes/carru3.jpg" alt="Imagen 3"></div>
+                    <div class="slide"><img src="imagenes/carru4.jpg" alt="Imagen 4"></div>
+                </div>
+            </section>
+
+            <!-- OFERTAS -->
+            <section class="ofertas" id="ofertas">
+                <h2>OFERTAS DEL DÍA</h2>
+
+                <div class="productos-grid">
+
+                    <!-- CARD 1 -->
+                    <div class="producto-card">
+                        <div class="producto-img">
+                            <img src="imagenes/samsunga54.jpeg" alt="Samsung A54">
+                        </div>
+
+                        <h3>Samsung A54</h3>
+
+                        <div class="precio-wrapper">
+                            <span class="precio-original">S/.1349</span>
+                            <span class="precio-oferta">S/.1149</span>
+                            <span class="descuento">-S/.200</span>
+                        </div>
+
+                        <p class="especificaciones">128GB | 8GB RAM</p>
+                        <button class="btn-comprar">COMPRAR</button>
+                    </div>
+
+                    <!-- CARD 2 -->
+                    <div class="producto-card">
+                        <div class="producto-img">
+                            <img src="imagenes/iphone15.jpeg" alt="iPhone 15">
+                        </div>
+
+                        <h3>iPhone 15</h3>
+
+                        <div class="precio-wrapper">
+                            <span class="precio-original">S/.3200</span>
+                            <span class="precio-oferta">S/.3000</span>
+                            <span class="descuento">-S/.200</span>
+                        </div>
+
+                        <p class="especificaciones">128GB | 4GB RAM</p>
+                        <button class="btn-comprar">COMPRAR</button>
+                    </div>
+
+                    <!-- CARD 3 -->
+                    <div class="producto-card">
+                        <div class="producto-img">
+                            <img src="imagenes/Xioami-redmi-note.jpeg" alt="Xiaomi Redmi 12">
+                        </div>
+
+                        <h3>Xiaomi Redmi 12</h3>
+
+                        <div class="precio-wrapper">
+                            <span class="precio-original">S/.2800</span>
+                            <span class="precio-oferta">S/.2600</span>
+                            <span class="descuento">-S/.200</span>
+                        </div>
+
+                        <p class="especificaciones">64GB | 6GB RAM</p>
+                        <button class="btn-comprar">COMPRAR</button>
+                    </div>
+
+                </div>
+            </section>
+
+            <!-- SOBRE NOSOTROS -->
+            <section class="sobre-nosotros">
+                <div class="sobre-contenido">
+
+                    <div class="sobre-imagen">
+                        <img src="imagenes/tienda.jpg" class="sobre-img-real" alt="Nuestra tienda">
+                    </div>
+
+                    <div class="sobre-texto">
+                        <h2>Sobre IPLLACIX</h2>
+                        <p>Somos un negocio pequeño formado por jóvenes emprendedores apasionados por la tecnología.</p>
+                        <p>En IPLLACIX te ayudamos a encontrar el celular perfecto para ti, con equipos originales, precios accesibles y atención personalizada.</p>
+                        <p>Gracias por confiar en nosotros por más de 5 años.</p>
+                    </div>
+
+                </div>
+            </section>
+
+            <div class="centrar-boton">
+                <button class="btn-catalogo" onclick="window.location.href='catalogo.html'">
+                    Ver Catálogo Completo
+                </button>
+            </div>
+
+        </main>
+
+        <!-- CATEGORÍAS -->
+        <aside class="sidebar">
+
+            <div class="categorias">
+                <h3>Categorías</h3>
+
+                <div class="categoria-item">Samsung</div>
+                <div class="categoria-item">Apple</div>
+                <div class="categoria-item">Xiaomi</div>
+                <div class="categoria-item">Motorola</div>
+                <div class="categoria-item">Oppo</div>
+                <div class="categoria-item">Realme</div>
+            </div>
+
+        </aside>
+
+    </div>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-content">
+
+            <div class="redes-sociales">
+                <h4>Síguenos en redes sociales</h4>
+
+                <div class="social-icons">
+                    <a href="#" class="social-link"><img src="imagenes/fb.jpg"> Facebook</a>
+                    <a href="#" class="social-link"><img src="imagenes/ig.jpg"> Instagram</a>
+                    <a href="#" class="social-link"><img src="imagenes/tt.jpg"> TikTok</a>
+                </div>
+            </div>
+
+            <div class="footer-info">
+                <p>© 2025 IPLLACIX. Todos los derechos reservados.</p>
+                <p>Tu tienda de confianza en tecnología móvil</p>
+            </div>
+
+        </div>
+    </footer>
+
+</body>
+</html>

@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>IPLLACIX - Inicio</title>
+    <link rel="icon" href="imagenes/ipllacix.png" type="image/png">
 
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="inicio.css">
@@ -13,9 +14,15 @@
     <div class="top-bar">
         <p class="bienvenida">Bienvenido a IPLLACIX</p>
         <div class="top-icons">
-            <img src="imagenes/fb.jpg" alt="Facebook">
-            <img src="imagenes/tt.jpg" alt="Twitter">
-            <img src="imagenes/ig.jpg" alt="Instagram">
+            <a href="https://www.facebook.com/andresitopes" target="_blank">
+                <img src="imagenes/fb.jpg" alt="Facebook">
+            </a>
+            <a href="https://www.tiktok.com/@andreecitoo" target="_blank">
+                <img src="imagenes/tt.jpg" alt="TikTok">
+            </a>
+            <a href="https://www.instagram.com/andrellaque_/" target="_blank">
+                <img src="imagenes/ig.jpg" alt="Instagram">
+            </a>
         </div>
     </div>
 
@@ -47,29 +54,65 @@
         </div>
     </header>
 
-    <div class="main-content">
+    <div class="main-content-centered">
 
-        <main class="content">
+        <main class="content-full">
+            
             <section class="carousel">
-                <div class="carousel-container">
+                <div id="carousel-container" class="carousel-container">
+                    
                     <div class="slide active">
-                        <img src="imagenes/carru1.jpg" alt="Imagen 1">
+                        <a href="catalogo.html?marca=samsung">
+                            <img src="imagenes/carru11.jpg" alt="Oferta Samsung">
+                        </a>
                     </div>
+
                     <div class="slide">
-                        <img src="imagenes/carru2.jpg" alt="Imagen 2">
+                        <a href="catalogo.html?marca=apple">
+                            <img src="imagenes/carru22.jpg" alt="Oferta Apple">
+                        </a>
                     </div>
+
                     <div class="slide">
-                        <img src="imagenes/carru3.jpg" alt="Imagen 3">
+                        <a href="catalogo.html?marca=xiaomi">
+                            <img src="imagenes/carru33.jpg" alt="Oferta Xiaomi">
+                        </a>
                     </div>
+
                     <div class="slide">
-                        <img src="imagenes/carru4.jpg" alt="Imagen 4">
+                        <a href="catalogo.html?marca=motorola">
+                            <img src="imagenes/carru44.jpg" alt="Oferta Motorola">
+                        </a>
                     </div>
+
+                </div>
+
+                <button class="carousel-btn prev-slide">&#10094;</button> 
+                <button class="carousel-btn next-slide">&#10095;</button> 
+            </section>
+
+            <section class="marcas-visuales">
+                <h2>Nuestras Marcas Favoritas</h2>
+                <div class="marcas-grid">
+                    <a href="catalogo.html?marca=samsung" class="marca-card samsung">
+                        <span>Samsung</span>
+                    </a>
+                    <a href="catalogo.html?marca=apple" class="marca-card apple">
+                        <span>Apple</span>
+                    </a>
+                    <a href="catalogo.html?marca=xiaomi" class="marca-card xiaomi">
+                        <span>Xiaomi</span>
+                    </a>
+                    <a href="catalogo.html?marca=motorola" class="marca-card motorola">
+                        <span>Motorola</span>
+                    </a>
                 </div>
             </section>
 
             <section class="ofertas" id="ofertas">
                 <h2>OFERTAS DEL DÍA</h2>
                 <div class="productos-grid">
+                    
                     <div class="producto-card">
                         <div class="producto-img">
                             <img src="imagenes/samsunga54.jpeg" alt="Samsung A54">
@@ -111,6 +154,7 @@
                         <p class="especificaciones">64GB | 6GB RAM</p>
                         <button class="btn-comprar">COMPRAR</button>
                     </div>
+
                 </div>
             </section>
 
@@ -119,33 +163,20 @@
                     <div class="sobre-imagen">
                         <img src="imagenes/tienda.jpg" alt="Sobre IPLLACIX" class="sobre-img-real">
                     </div>
+                    
                     <div class="sobre-texto">
                         <h2>Sobre IPLLACIX</h2>
                         <p>Somos un negocio pequeño formado por jóvenes emprendedores apasionados por la tecnología. En IPLLACIX te ayudamos a encontrar el celular perfecto para ti, siempre con equipos 100% originales.</p>
                         <p>Gracias por apoyar a los emprendedores y confiar en nosotros durante más de 5 años.</p>
+                        
+                        <button class="btn-catalogo" onclick="window.location.href='catalogo.html'">
+                            Ver Catálogo Completo
+                        </button>
                     </div>
                 </div>
             </section>
 
-            <div class="centrar-boton">
-                <button class="btn-catalogo" onclick="window.location.href='catalogo.html'">
-                    Ver Catálogo Completo
-                </button>
-            </div>
         </main>
-
-        <aside class="sidebar">
-            <div class="categorias">
-                <h3>Categorías</h3>
-                <div class="categoria-item"><span class="categoria-icon"></span>Samsung</div>
-                <div class="categoria-item"><span class="categoria-icon"></span>Apple</div>
-                <div class="categoria-item"><span class="categoria-icon"></span>Xiaomi</div>
-                <div class="categoria-item"><span class="categoria-icon"></span>Motorola</div>
-                <div class="categoria-item"><span class="categoria-icon"></span>Oppo</div>
-                <div class="categoria-item"><span class="categoria-icon"></span>Realme</div>
-            </div>
-        </aside>
-
     </div>
 
     <footer>
@@ -153,14 +184,14 @@
             <div class="redes-sociales">
                 <h4>Síguenos en redes sociales</h4>
                 <div class="social-icons">
-                    <a href="#" class="social-link">
-                        <img src="imagenes/fb.jpg" alt="Facebook"> Facebook
+                    <a href="https://www.facebook.com/andresitopes" target="_blank" class="social-link">
+                        <img src="imagenes/fb.jpg"> Facebook
                     </a>
-                    <a href="#" class="social-link">
-                        <img src="imagenes/ig.jpg" alt="Instagram"> Instagram
+                    <a href="https://www.instagram.com/andrellaque_/" target="_blank" class="social-link">
+                        <img src="imagenes/ig.jpg"> Instagram
                     </a>
-                    <a href="#" class="social-link">
-                        <img src="imagenes/tt.jpg" alt="TikTok"> TikTok
+                    <a href="https://www.tiktok.com/@andreecitoo" target="_blank" class="social-link">
+                        <img src="imagenes/tt.jpg"> TikTok
                     </a>
                 </div>
             </div>
@@ -172,16 +203,12 @@
     </footer>
 
     <div id="cart-overlay" class="cart-overlay"></div>
-
     <div id="cart-panel" class="cart-panel">
         <div class="cart-header">
             <h2>Carrito de Compras</h2>
             <span id="close-cart" class="close-cart">×</span>
         </div>
-
-        <div id="cart-items" class="cart-items">
-            </div>
-
+        <div id="cart-items" class="cart-items"></div>
         <div class="cart-footer">
             <h3>Subtotal: <span id="cart-total">S/ 0.00</span></h3>
             <button id="vaciar-carrito" class="btn-carrito rojo">Vaciar carrito</button>
@@ -190,6 +217,7 @@
         </div>
     </div>
 
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="carrito.js"></script>
 </body>
 </html>

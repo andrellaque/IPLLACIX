@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>IPLLACIX - Catálogo</title>
+    <link rel="icon" href="imagenes/ipllacix.png" type="image/png">
 
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="catalogo.css">
@@ -13,31 +14,26 @@
     <div class="top-bar">
         <p class="bienvenida">Bienvenido a IPLLACIX</p>
         <div class="top-icons">
-            <img src="imagenes/fb.jpg" alt="Facebook">
-            <img src="imagenes/tt.jpg" alt="Twitter">
-            <img src="imagenes/ig.jpg" alt="Instagram">
+            <a href="https://www.facebook.com/andresitopes" target="_blank"><img src="imagenes/fb.jpg" alt="Facebook"></a>
+            <a href="https://www.tiktok.com/@andreecitoo" target="_blank"><img src="imagenes/tt.jpg" alt="TikTok"></a>
+            <a href="https://www.instagram.com/andrellaque_/" target="_blank"><img src="imagenes/ig.jpg" alt="Instagram"></a>
         </div>
     </div>
 
     <header class="header-main">
         <div class="header-logo">
-            <a href="index.html">
-                <img src="imagenes/ipllacix.png" alt="IPLLACIX">
-            </a>
+            <a href="index.html"><img src="imagenes/ipllacix.png" alt="IPLLACIX"></a>
         </div>
-
         <div class="header-search">
             <img src="imagenes/lupa.jpg" class="search-icon" alt="Buscar">
             <input type="text" placeholder="Buscar productos...">
         </div>
-
         <nav class="header-menu">
             <a href="index.html">INICIO</a>
             <a href="catalogo.html" class="active">CATÁLOGO</a>
             <a href="contacto.html">CONTACTO</a>
             <a href="carrito.html">CARRITO</a>
         </nav>
-
         <div class="header-cart">
             <span class="cart-amount">S/ 0.00</span>
             <div class="cart-icon-container">
@@ -48,23 +44,23 @@
     </header>
 
     <div class="catalogo-layout">
-
+        
         <aside class="filtros-sidebar">
             <div class="filtro-grupo">
                 <h3>Filtrar por Marca</h3>
-                <label class="filtro-opcion"><input type="checkbox"> Samsung</label>
-                <label class="filtro-opcion"><input type="checkbox"> Apple</label>
-                <label class="filtro-opcion"><input type="checkbox"> Xiaomi</label>
-                <label class="filtro-opcion"><input type="checkbox"> Motorola</label>
+                <label class="filtro-opcion"><input type="checkbox" data-type="marca" value="samsung"> Samsung</label>
+                <label class="filtro-opcion"><input type="checkbox" data-type="marca" value="apple"> Apple</label>
+                <label class="filtro-opcion"><input type="checkbox" data-type="marca" value="xiaomi"> Xiaomi</label>
+                <label class="filtro-opcion"><input type="checkbox" data-type="marca" value="motorola"> Motorola</label>
             </div>
 
             <div class="filtro-grupo">
                 <h3>Filtrar por Precio</h3>
-                <label class="filtro-opcion"><input type="checkbox"> S/.500 - S/.1500</label>
-                <label class="filtro-opcion"><input type="checkbox"> S/.1501 - S/.3000</label>
-                <label class="filtro-opcion"><input type="checkbox"> S/.3001 - S/.6000</label>
+                <label class="filtro-opcion"><input type="checkbox" data-type="precio" data-min="500" data-max="1500"> S/.500 - S/.1500</label>
+                <label class="filtro-opcion"><input type="checkbox" data-type="precio" data-min="1501" data-max="3000"> S/.1501 - S/.3000</label>
+                <label class="filtro-opcion"><input type="checkbox" data-type="precio" data-min="3001" data-max="10000"> Más de S/.3000</label>
             </div>
-
+            
             <div class="banner-promo">
                 <h3>Oferta Especial</h3>
                 <p>¡Hasta 20% de descuento en modelos seleccionados!</p>
@@ -74,95 +70,68 @@
 
         <main class="productos-content">
             <h2>Nuestros Productos</h2>
-
             <div class="productos-grid">
                 <div class="producto-card">
-                    <div class="producto-imagen">
-                        <img src="imagenes/samsungas23.jpeg" alt="Samsung Galaxy S23">
-                    </div>
+                    <div class="producto-imagen"><img src="imagenes/samsungas23.jpeg" alt="Samsung Galaxy S23"></div>
                     <h3 class="producto-modelo">Samsung Galaxy S23</h3>
                     <p class="producto-especificaciones">128GB | 8GB RAM | Cámara 50MP</p>
                     <p class="producto-precio">S/.2800</p>
                     <button class="btn-comprar">Comprar</button>
                 </div>
-
                 <div class="producto-card">
-                    <div class="producto-imagen">
-                        <img src="imagenes/Iphone-17-pro.png" alt="Apple iPhone 17 Pro">
-                    </div>
-                    <h3 class="producto-modelo">Apple iPhone 17 Pro</h3>
-                    <p class="producto-especificaciones">128GB | 6GB RAM | Cámara 48MP</p>
-                    <p class="producto-precio">S/.5400</p>
-                    <button class="btn-comprar">Comprar</button>
-                </div>
-
-                <div class="producto-card">
-                    <div class="producto-imagen">
-                        <img src="imagenes/Xioami-redmi-note.jpeg" alt="Xiaomi Redmi Note 12">
-                    </div>
-                    <h3 class="producto-modelo">Xiaomi Redmi Note 12</h3>
-                    <p class="producto-especificaciones">256GB | 8GB RAM | Cámara 108MP</p>
-                    <p class="producto-precio">S/.2800</p>
-                    <button class="btn-comprar">Comprar</button>
-                </div>
-
-                <div class="producto-card">
-                    <div class="producto-imagen">
-                        <img src="imagenes/motorola.jpeg" alt="Motorola Edge 40">
-                    </div>
-                    <h3 class="producto-modelo">Motorola Edge 40</h3>
-                    <p class="producto-especificaciones">256GB | 12GB RAM | Pantalla 144Hz</p>
-                    <p class="producto-precio">S/.949</p>
-                    <button class="btn-comprar">Comprar</button>
-                </div>
-
-                <div class="producto-card">
-                    <div class="producto-imagen">
-                        <img src="imagenes/samsunga54.jpeg" alt="Samsung A54">
-                    </div>
+                    <div class="producto-imagen"><img src="imagenes/samsunga54.jpeg" alt="Samsung A54"></div>
                     <h3 class="producto-modelo">Samsung A54</h3>
                     <p class="producto-especificaciones">128GB | 8GB RAM | Cámara 50MP</p>
                     <p class="producto-precio">S/.1349</p>
                     <button class="btn-comprar">Comprar</button>
                 </div>
-
                 <div class="producto-card">
-                    <div class="producto-imagen">
-                        <img src="imagenes/iphone15.jpeg" alt="iPhone 15">
-                    </div>
+                    <div class="producto-imagen"><img src="imagenes/Iphone-17-pro.png" alt="Apple iPhone 17 Pro"></div>
+                    <h3 class="producto-modelo">Apple iPhone 17 Pro</h3>
+                    <p class="producto-especificaciones">128GB | 6GB RAM | Cámara 48MP</p>
+                    <p class="producto-precio">S/.5400</p>
+                    <button class="btn-comprar">Comprar</button>
+                </div>
+                <div class="producto-card">
+                    <div class="producto-imagen"><img src="imagenes/iphone15.jpeg" alt="iPhone 15"></div>
                     <h3 class="producto-modelo">iPhone 15</h3>
                     <p class="producto-especificaciones">128GB | 4GB RAM | Cámara 48MP</p>
                     <p class="producto-precio">S/.3200</p>
                     <button class="btn-comprar">Comprar</button>
                 </div>
-
                 <div class="producto-card">
-                    <div class="producto-imagen">
-                        <img src="imagenes/motorola-rasz.jpeg" alt="Motorola Razr 60 Ultra">
-                    </div>
-                    <h3 class="producto-modelo">Motorola Razr 60 Ultra</h3>
-                    <p class="producto-especificaciones">512GB | 12GB RAM | Cámara 50MP</p>
-                    <p class="producto-precio">S/.5600</p>
-                    <button class="btn-comprar">Comprar</button>
-                </div>
-
-                <div class="producto-card">
-                    <div class="producto-imagen">
-                        <img src="imagenes/ip 15 pro.jpeg" alt="iPhone 15 Pro">
-                    </div>
+                    <div class="producto-imagen"><img src="imagenes/ip 15 pro.jpeg" alt="iPhone 15 Pro"></div>
                     <h3 class="producto-modelo">Apple iPhone 15 Pro</h3>
                     <p class="producto-especificaciones">256GB | 8GB RAM | Cámara 48MP</p>
                     <p class="producto-precio">S/.3900</p>
                     <button class="btn-comprar">Comprar</button>
                 </div>
-
                 <div class="producto-card">
-                    <div class="producto-imagen">
-                        <img src="imagenes/xiami-poco.jpeg" alt="Xiaomi POCO X7 Pro">
-                    </div>
+                    <div class="producto-imagen"><img src="imagenes/Xioami-redmi-note.jpeg" alt="Xiaomi Redmi Note 12"></div>
+                    <h3 class="producto-modelo">Xiaomi Redmi Note 12</h3>
+                    <p class="producto-especificaciones">256GB | 8GB RAM | Cámara 108MP</p>
+                    <p class="producto-precio">S/.2800</p>
+                    <button class="btn-comprar">Comprar</button>
+                </div>
+                <div class="producto-card">
+                    <div class="producto-imagen"><img src="imagenes/xiami-poco.jpeg" alt="Xiaomi POCO X7 Pro"></div>
                     <h3 class="producto-modelo">Xiaomi POCO X7 Pro</h3>
                     <p class="producto-especificaciones">256GB | 8GB RAM | Cámara 50MP</p>
                     <p class="producto-precio">S/.3000</p>
+                    <button class="btn-comprar">Comprar</button>
+                </div>
+                <div class="producto-card">
+                    <div class="producto-imagen"><img src="imagenes/motorola.jpeg" alt="Motorola Edge 40"></div>
+                    <h3 class="producto-modelo">Motorola Edge 40</h3>
+                    <p class="producto-especificaciones">256GB | 12GB RAM | Pantalla 144Hz</p>
+                    <p class="producto-precio">S/.949</p>
+                    <button class="btn-comprar">Comprar</button>
+                </div>
+                <div class="producto-card">
+                    <div class="producto-imagen"><img src="imagenes/motorola-rasz.jpeg" alt="Motorola Razr 60 Ultra"></div>
+                    <h3 class="producto-modelo">Motorola Razr 60 Ultra</h3>
+                    <p class="producto-especificaciones">512GB | 12GB RAM | Cámara 50MP</p>
+                    <p class="producto-precio">S/.5600</p>
                     <button class="btn-comprar">Comprar</button>
                 </div>
             </div>
@@ -174,9 +143,9 @@
             <div class="redes-sociales">
                 <h4>Síguenos en redes sociales</h4>
                 <div class="social-icons">
-                    <a href="#" class="social-link"><img src="imagenes/fb.jpg"> Facebook</a>
-                    <a href="#" class="social-link"><img src="imagenes/ig.jpg"> Instagram</a>
-                    <a href="#" class="social-link"><img src="imagenes/tt.jpg"> TikTok</a>
+                    <a href="https://www.facebook.com/andresitopes" target="_blank" class="social-link"><img src="imagenes/fb.jpg"> Facebook</a>
+                    <a href="https://www.instagram.com/andrellaque_/" target="_blank" class="social-link"><img src="imagenes/ig.jpg"> Instagram</a>
+                    <a href="https://www.tiktok.com/@andreecitoo" target="_blank" class="social-link"><img src="imagenes/tt.jpg"> TikTok</a>
                 </div>
             </div>
             <div class="footer-info">
@@ -187,16 +156,12 @@
     </footer>
 
     <div id="cart-overlay" class="cart-overlay"></div>
-
     <div id="cart-panel" class="cart-panel">
         <div class="cart-header">
             <h2>Carrito de Compras</h2>
             <span id="close-cart" class="close-cart">×</span>
         </div>
-
-        <div id="cart-items" class="cart-items">
-            </div>
-
+        <div id="cart-items" class="cart-items"></div>
         <div class="cart-footer">
             <h3>Subtotal: <span id="cart-total">S/ 0.00</span></h3>
             <button id="vaciar-carrito" class="btn-carrito rojo">Vaciar carrito</button>
@@ -205,6 +170,45 @@
         </div>
     </div>
 
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="carrito.js"></script>
+
+    <script>
+        // Ejecutarse apenas el HTML esté listo (sin esperar imágenes)
+        document.addEventListener("DOMContentLoaded", () => {
+            
+            // 1. ¿Qué dice la URL?
+            const params = new URLSearchParams(window.location.search);
+            const marcaURL = params.get('marca');
+
+            // Si hay una marca en la URL (ej: samsung), procedemos
+            if (marcaURL) {
+                const marcaBuscada = marcaURL.toLowerCase();
+                console.log("🕵️ Detectada marca:", marcaBuscada);
+
+                // 2. Marcar el checkbox (Solo visual, para que el usuario sepa)
+                const checkbox = document.querySelector(`input[value="${marcaBuscada}"]`);
+                if (checkbox) checkbox.checked = true;
+
+                // 3. OCULTAR PRODUCTOS MANUALMENTE (Sin depender de nadie más)
+                const tarjetas = document.querySelectorAll('.producto-card');
+
+                tarjetas.forEach(card => {
+                    // Buscamos el título H3
+                    const tituloTag = card.querySelector('h3');
+                    if (tituloTag) {
+                        const nombreProducto = tituloTag.textContent.toLowerCase();
+                        
+                        // Si el nombre NO tiene la marca, lo borramos de la vista
+                        if (!nombreProducto.includes(marcaBuscada)) {
+                            card.style.display = 'none';
+                        } else {
+                            card.style.display = 'block'; // Aseguramos que se vea
+                        }
+                    }
+                });
+            }
+        });
+    </script>
 </body>
 </html>

@@ -333,3 +333,29 @@
 .btn-carrito:hover {
     transform: scale(1.03);
 }
+
+@media (max-width: 768px) {
+    
+    /* Esto permite 2 columnas en celulares (mínimo 150px por tarjeta) */
+    .productos-grid {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); 
+        gap: 15px; /* Menos espacio entre tarjetas */
+    }
+
+    /* Reducimos el tamaño de la tarjeta para que quepa bien */
+    .producto-card {
+        padding: 15px; /* Menos relleno interno */
+    }
+
+    .producto-img {
+        height: 140px; /* Imagen más controlada */
+    }
+
+    .producto-card h3 {
+        font-size: 16px; /* Título más pequeño */
+    }
+    
+    .precio-oferta {
+        font-size: 20px;
+    }
+}

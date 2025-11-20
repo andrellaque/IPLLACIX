@@ -367,3 +367,64 @@ footer {
     transform: scale(1.03);
 }
 
+/* =========================================
+   RESPONSIVE (CELULARES) - PEGAR AL FINAL DE STYLES.CSS
+========================================= */
+@media (max-width: 768px) {
+
+    /* 1. Barra superior más pequeña */
+    .top-bar {
+        display: flex;
+        justify-content: space-between; /* Separa texto e íconos */
+        font-size: 12px;
+        padding: 8px 15px;
+    }
+    .top-icons img { width: 18px; }
+
+    /* 2. Header compacto */
+    .header-main {
+        flex-direction: column;
+        padding: 15px;
+        gap: 15px;
+    }
+
+    .header-logo img {
+        height: 40px; /* Logo un poco más chico */
+    }
+
+    /* 3. Buscador al 100% */
+    .header-search {
+        width: 100%;
+        max-width: 100%;
+    }
+    
+    .header-search input {
+        font-size: 14px; /* Letra legible pero no gigante */
+    }
+
+    /* 4. Menú estilo "Botones" (más ordenado) */
+    .header-menu {
+        display: flex;
+        flex-wrap: wrap; /* Permite que bajen si no caben */
+        justify-content: center;
+        gap: 10px;
+        width: 100%;
+    }
+
+    .header-menu a {
+        font-size: 13px;
+        background-color: #f0f0f0; /* Un fondito gris */
+        padding: 8px 12px;
+        border-radius: 20px; /* Bordes redondos */
+        border: 1px solid #ddd;
+    }
+
+    /* 5. Carrito centrado */
+    .header-cart {
+        justify-content: center;
+        width: 100%;
+        border-top: 1px solid #eee;
+        padding-top: 10px;
+    }
+}
+

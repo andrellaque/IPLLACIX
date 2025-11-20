@@ -47,9 +47,10 @@
             <a href="index.html">INICIO</a>
             <a href="catalogo.html">CATÁLOGO</a>
             <a href="contacto.html" class="active-page">CONTACTO</a>
+            <a href="carrito.html">CARRITO</a>
         </nav>
 
-        <!-- CARRITO -->
+        <!-- CARRITO (LATERAL) -->
         <div class="header-cart">
             <span class="cart-amount">S/ 0.00</span>
             <div class="cart-icon-container">
@@ -154,7 +155,6 @@
         <h3>Nuestra Ubicación</h3>
 
         <div class="map-container">
-
             <iframe
                 src="https://www.google.com/maps/embed?pb=!4v1763515233114!6m8!1m7!1swyrUVDaXf8gmB3va_Mqrlg!2m2!1d-6.766298403108742!2d-79.84248352926859!3f194.64!4f-0.269999999999996!5f0.7820865974627469"
                 allowfullscreen=""
@@ -186,6 +186,56 @@
 
         </div>
     </footer>
+
+    <!-- CARRITO LATERAL -->
+    <div id="cart-overlay" class="cart-overlay"></div>
+
+    <div id="cart-panel" class="cart-panel">
+
+        <div class="cart-header">
+            <h2>Carrito de Compras</h2>
+            <span id="close-cart" class="close-cart">×</span>
+        </div>
+
+        <div id="cart-items" class="cart-items">
+            <!-- Productos agregados -->
+        </div>
+
+        <div class="cart-footer">
+            <h3>Subtotal: <span id="cart-total">S/ 0.00</span></h3>
+
+            <button class="btn-carrito rojo" id="vaciar-carrito">Vaciar carrito</button>
+            <button class="btn-carrito azul" id="btn-ir-carrito">Ver carrito</button>
+            <button class="btn-carrito azul oscuro">Finalizar compra</button>
+        </div>
+    </div>
+
+    <!-- JS DEL CARRITO -->
+    <script src="carrito.js"></script>
+
+    <!-- ========= CARRITO LATERAL GLOBAL ========= -->
+
+<div id="cart-overlay" class="cart-overlay"></div>
+
+<div id="cart-panel" class="cart-panel">
+
+    <div class="cart-header">
+        <h2>Carrito de Compras</h2>
+        <span id="close-cart" class="close-cart">×</span>
+    </div>
+
+    <div id="cart-items" class="cart-items"></div>
+
+    <div class="cart-footer">
+        <h3>Subtotal: <span id="cart-total">S/ 0.00</span></h3>
+
+        <button id="vaciar-carrito" class="btn-carrito rojo">Vaciar carrito</button>
+        <button class="btn-carrito azul" onclick="location.href='carrito.html'">Ver carrito</button>
+        <button class="btn-carrito azul oscuro">Finalizar compra</button>
+    </div>
+</div>
+
+<script src="carrito.js"></script>
 
 </body>
 </html>

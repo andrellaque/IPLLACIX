@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito de Compras - IPLLACIX</title>
+
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="carrito.css">
+</head>
+<body>
+
+    <!-- BARRA SUPERIOR -->
+    <div class="top-bar">
+        <p class="bienvenida">Bienvenido a IPLLACIX</p>
+
+        <div class="top-icons">
+            <img src="imagenes/fb.jpg" alt="Facebook">
+            <img src="imagenes/tt.jpg" alt="Twitter">
+            <img src="imagenes/ig.jpg" alt="Instagram">
+        </div>
+    </div>
+
+    <!-- HEADER -->
+    <header class="header-main">
+        <div class="header-logo">
+            <a href="index.html"><img src="imagenes/ipllacix.png" alt="Logo IPLLACIX"></a>
+        </div>
+
+        <div class="header-search">
+            <img src="imagenes/lupa.jpg" class="search-icon">
+            <input type="text" placeholder="Buscar productos...">
+        </div>
+
+        <nav class="header-menu">
+            <a href="index.html">INICIO</a>
+            <a href="catalogo.html">CATÁLOGO</a>
+            <a href="contacto.html">CONTACTO</a>
+            <a href="carrito.html" class="active-page">CARRITO</a>
+        </nav>
+
+        <div class="header-cart" onclick="window.location.href='carrito.html'">
+            <span class="cart-amount">S/ 0.00</span>
+            <div class="cart-icon-container">
+                <img src="imagenes/carrito.png" class="cart-icon">
+                <span class="cart-count">0</span>
+            </div>
+        </div>
+    </header>
+
+    <!-- TÍTULO -->
+    <h1 class="titulo-carrito">Carrito de Compras</h1>
+
+    <main class="carrito-contenedor">
+
+        <!-- LISTA -->
+        <section id="carrito-items" class="carrito-lista"></section>
+
+        <!-- RESUMEN -->
+        <aside class="carrito-resumen">
+            <h2>Totales del carrito</h2>
+
+            <div class="resumen-item">
+                <span>Subtotal:</span>
+                <span id="subtotal">S/ 0.00</span>
+            </div>
+
+            <button id="vaciar-carrito" class="btn-vaciar">Vaciar carrito</button>
+            <button class="btn-finalizar">Finalizar compra</button>
+        </aside>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-info">
+                <p>© 2025 IPLLACIX. Todos los derechos reservados.</p>
+                <p>Tu tienda de confianza en tecnología móvil</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="carrito.js"></script>
+</body>
+</html>

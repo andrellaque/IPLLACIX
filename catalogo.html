@@ -1,24 +1,17 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>IPLLACIX - Catálogo</title>
 
-    <!-- CSS GLOBAL -->
     <link rel="stylesheet" href="styles.css">
-
-    <!-- CSS CATÁLOGO -->
     <link rel="stylesheet" href="catalogo.css">
 </head>
 
 <body>
-
-    <!-- BARRA SUPERIOR -->
     <div class="top-bar">
         <p class="bienvenida">Bienvenido a IPLLACIX</p>
-
         <div class="top-icons">
             <img src="imagenes/fb.jpg" alt="Facebook">
             <img src="imagenes/tt.jpg" alt="Twitter">
@@ -26,30 +19,25 @@
         </div>
     </div>
 
-    <!-- HEADER -->
     <header class="header-main">
-
-        <!-- LOGO -->
         <div class="header-logo">
             <a href="index.html">
                 <img src="imagenes/ipllacix.png" alt="IPLLACIX">
             </a>
         </div>
 
-        <!-- BUSCADOR -->
         <div class="header-search">
             <img src="imagenes/lupa.jpg" class="search-icon" alt="Buscar">
             <input type="text" placeholder="Buscar productos...">
         </div>
 
-        <!-- MENÚ -->
         <nav class="header-menu">
             <a href="index.html">INICIO</a>
-            <a href="catalogo.html">CATÁLOGO</a>
+            <a href="catalogo.html" class="active">CATÁLOGO</a>
             <a href="contacto.html">CONTACTO</a>
+            <a href="carrito.html">CARRITO</a>
         </nav>
 
-        <!-- CARRITO -->
         <div class="header-cart">
             <span class="cart-amount">S/ 0.00</span>
             <div class="cart-icon-container">
@@ -57,51 +45,37 @@
                 <span class="cart-count">0</span>
             </div>
         </div>
-
     </header>
 
-    <!-- CONTENIDO DEL CATÁLOGO -->
     <div class="catalogo-layout">
 
-        <!-- SIDEBAR -->
         <aside class="filtros-sidebar">
-
-            <!-- Filtro marcas -->
             <div class="filtro-grupo">
                 <h3>Filtrar por Marca</h3>
-
                 <label class="filtro-opcion"><input type="checkbox"> Samsung</label>
                 <label class="filtro-opcion"><input type="checkbox"> Apple</label>
                 <label class="filtro-opcion"><input type="checkbox"> Xiaomi</label>
                 <label class="filtro-opcion"><input type="checkbox"> Motorola</label>
             </div>
 
-            <!-- Filtro precios -->
             <div class="filtro-grupo">
                 <h3>Filtrar por Precio</h3>
-
                 <label class="filtro-opcion"><input type="checkbox"> S/.500 - S/.1500</label>
                 <label class="filtro-opcion"><input type="checkbox"> S/.1501 - S/.3000</label>
                 <label class="filtro-opcion"><input type="checkbox"> S/.3001 - S/.6000</label>
             </div>
 
-            <!-- Banner -->
             <div class="banner-promo">
                 <h3>Oferta Especial</h3>
                 <p>¡Hasta 20% de descuento en modelos seleccionados!</p>
                 <a href="index.html#ofertas" class="btn-promo">Ver Ofertas</a>
             </div>
-
         </aside>
 
-        <!-- PRODUCTOS -->
         <main class="productos-content">
-
             <h2>Nuestros Productos</h2>
 
             <div class="productos-grid">
-
-                <!-- PRODUCTO 1 -->
                 <div class="producto-card">
                     <div class="producto-imagen">
                         <img src="imagenes/samsungas23.jpeg" alt="Samsung Galaxy S23">
@@ -112,10 +86,9 @@
                     <button class="btn-comprar">Comprar</button>
                 </div>
 
-                <!-- PRODUCTO 2 -->
                 <div class="producto-card">
                     <div class="producto-imagen">
-                        <img src="imagenes/Iphone-17-pro.png" alt="iPhone 17 Pro">
+                        <img src="imagenes/Iphone-17-pro.png" alt="Apple iPhone 17 Pro">
                     </div>
                     <h3 class="producto-modelo">Apple iPhone 17 Pro</h3>
                     <p class="producto-especificaciones">128GB | 6GB RAM | Cámara 48MP</p>
@@ -123,7 +96,6 @@
                     <button class="btn-comprar">Comprar</button>
                 </div>
 
-                <!-- PRODUCTO 3 -->
                 <div class="producto-card">
                     <div class="producto-imagen">
                         <img src="imagenes/Xioami-redmi-note.jpeg" alt="Xiaomi Redmi Note 12">
@@ -134,7 +106,6 @@
                     <button class="btn-comprar">Comprar</button>
                 </div>
 
-                <!-- PRODUCTO 4 -->
                 <div class="producto-card">
                     <div class="producto-imagen">
                         <img src="imagenes/motorola.jpeg" alt="Motorola Edge 40">
@@ -145,7 +116,6 @@
                     <button class="btn-comprar">Comprar</button>
                 </div>
 
-                <!-- PRODUCTO 5 -->
                 <div class="producto-card">
                     <div class="producto-imagen">
                         <img src="imagenes/samsunga54.jpeg" alt="Samsung A54">
@@ -156,7 +126,6 @@
                     <button class="btn-comprar">Comprar</button>
                 </div>
 
-                <!-- PRODUCTO 6 -->
                 <div class="producto-card">
                     <div class="producto-imagen">
                         <img src="imagenes/iphone15.jpeg" alt="iPhone 15">
@@ -167,7 +136,6 @@
                     <button class="btn-comprar">Comprar</button>
                 </div>
 
-                <!-- PRODUCTO 7 -->
                 <div class="producto-card">
                     <div class="producto-imagen">
                         <img src="imagenes/motorola-rasz.jpeg" alt="Motorola Razr 60 Ultra">
@@ -178,7 +146,6 @@
                     <button class="btn-comprar">Comprar</button>
                 </div>
 
-                <!-- PRODUCTO 8 -->
                 <div class="producto-card">
                     <div class="producto-imagen">
                         <img src="imagenes/ip 15 pro.jpeg" alt="iPhone 15 Pro">
@@ -189,7 +156,6 @@
                     <button class="btn-comprar">Comprar</button>
                 </div>
 
-                <!-- PRODUCTO 9 -->
                 <div class="producto-card">
                     <div class="producto-imagen">
                         <img src="imagenes/xiami-poco.jpeg" alt="Xiaomi POCO X7 Pro">
@@ -199,33 +165,46 @@
                     <p class="producto-precio">S/.3000</p>
                     <button class="btn-comprar">Comprar</button>
                 </div>
-
             </div>
-
         </main>
     </div>
 
-    <!-- FOOTER -->
     <footer>
         <div class="footer-content">
-
             <div class="redes-sociales">
                 <h4>Síguenos en redes sociales</h4>
-
                 <div class="social-icons">
                     <a href="#" class="social-link"><img src="imagenes/fb.jpg"> Facebook</a>
                     <a href="#" class="social-link"><img src="imagenes/ig.jpg"> Instagram</a>
                     <a href="#" class="social-link"><img src="imagenes/tt.jpg"> TikTok</a>
                 </div>
             </div>
-
             <div class="footer-info">
                 <p>© 2025 IPLLACIX. Todos los derechos reservados.</p>
                 <p>Tu tienda de confianza en tecnología móvil</p>
             </div>
-
         </div>
     </footer>
 
+    <div id="cart-overlay" class="cart-overlay"></div>
+
+    <div id="cart-panel" class="cart-panel">
+        <div class="cart-header">
+            <h2>Carrito de Compras</h2>
+            <span id="close-cart" class="close-cart">×</span>
+        </div>
+
+        <div id="cart-items" class="cart-items">
+            </div>
+
+        <div class="cart-footer">
+            <h3>Subtotal: <span id="cart-total">S/ 0.00</span></h3>
+            <button id="vaciar-carrito" class="btn-carrito rojo">Vaciar carrito</button>
+            <button class="btn-carrito azul" onclick="window.location.href='carrito.html'">Ver carrito</button>
+            <button class="btn-carrito azul oscuro">Finalizar compra</button>
+        </div>
+    </div>
+
+    <script src="carrito.js"></script>
 </body>
 </html>

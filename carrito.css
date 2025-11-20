@@ -1,0 +1,110 @@
+.titulo-carrito {
+    text-align: center;
+    margin-top: 40px;
+    color: #007bff;
+    font-size: 38px;
+    font-weight: 700;
+}
+
+.carrito-contenedor {
+    max-width: 1300px;
+    margin: 40px auto;
+    display: flex;
+    gap: 40px;
+    min-height: 60vh;
+}
+
+.carrito-lista {
+    flex: 2;
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+.item-carrito {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.item-carrito img {
+    width: 110px;
+    height: 110px;
+    object-fit: contain;
+}
+
+.item-info h3 {
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.cantidad-box {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.btn-cantidad {
+    width: 35px;
+    height: 35px;
+    font-size: 22px;
+    background: white;
+    border: 2px solid #ccc;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.cantidad-numero {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.precio-item {
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.btn-eliminar {
+    color: red;
+    cursor: pointer;
+    font-size: 26px;
+    font-weight: bold;
+}
+
+/* RESUMEN */
+.carrito-resumen {
+    flex: 1;
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+.resumen-item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.btn-finalizar {
+    width: 100%;
+    padding: 14px;
+    background: #00a241;
+    color: white;
+    border-radius: 10px;
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+.btn-vaciar {
+    width: 100%;
+    padding: 12px;
+    background: red;
+    color: white;
+    border-radius: 8px;
+    font-size: 16px;
+    margin-bottom: 15px;
+}

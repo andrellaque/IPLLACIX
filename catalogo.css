@@ -1,7 +1,7 @@
-/* --- Layout general --- */
+/* Layout general */
 .catalogo-layout {
     display: flex;
-    justify-content: center; /* Centra sidebar + productos */
+    justify-content: center;
     align-items: flex-start;
     gap: 40px;
     max-width: 1400px;
@@ -9,9 +9,9 @@
     padding: 32px;
 }
 
-/* --- Sidebar filtros --- */
+/* Sidebar filtros */
 .filtros-sidebar {
-    width: 260px; /* Evita que empuje productos */
+    width: 260px;
     background-color: #f5f5f5;
     padding: 32px;
     border-radius: 15px;
@@ -50,7 +50,7 @@
     cursor: pointer;
 }
 
-/* --- Banner oferta --- */
+/* Banner oferta */
 .banner-promo {
     background: linear-gradient(135deg, #007bff, #007bff);
     color: white;
@@ -87,9 +87,9 @@
     background-color: #f9f9f9;
 }
 
-/* --- Productos --- */
+/* Productos */
 .productos-content {
-    flex: 1; /* Expansión sin empujar */
+    flex: 1;
     background: white;
 }
 
@@ -104,9 +104,9 @@
 /* Grid productos */
 .productos-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* 3 columnas */
+    grid-template-columns: repeat(3, 1fr);
     gap: 40px;
-    justify-items: center; /* Centra cada card */
+    justify-items: center;
 }
 
 /* Card */
@@ -180,40 +180,7 @@
     transform: scale(1.03);
 }
 
-/* --- Responsive --- */
-@media (max-width: 900px) {
-    .catalogo-layout {
-        gap: 20px;
-    }
-}
-
-@media (max-width: 768px) {
-    .catalogo-layout {
-        flex-direction: column;
-        padding: 16px;
-    }
-
-    .filtros-sidebar {
-        order: 2;
-        width: 100%;
-    }
-
-    .productos-content {
-        order: 1;
-    }
-
-    .productos-grid {
-        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-        gap: 20px;
-    }
-
-    .producto-imagen {
-        height: 180px;
-    }
-}
-
-/* === CARRITO LATERAL IPLLACIX === */
-
+/* Carrito Lateral IPLLACIX */
 .cart-overlay {
     position: fixed;
     top: 0; left: 0;
@@ -334,25 +301,46 @@
     transform: scale(1.03);
 }
 
+/* Responsive */
+@media (max-width: 900px) {
+    .catalogo-layout {
+        gap: 20px;
+    }
+}
+
 @media (max-width: 768px) {
-    
-    /* Esto permite 2 columnas en celulares (mínimo 150px por tarjeta) */
+    /* Layout Columna */
+    .catalogo-layout {
+        flex-direction: column;
+        padding: 16px;
+    }
+
+    .filtros-sidebar {
+        order: 2;
+        width: 100%;
+    }
+
+    .productos-content {
+        order: 1;
+    }
+
+    /* Grid de 2 columnas para celulares */
     .productos-grid {
         grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); 
-        gap: 15px; /* Menos espacio entre tarjetas */
+        gap: 15px;
     }
 
-    /* Reducimos el tamaño de la tarjeta para que quepa bien */
+    /* Ajustes tarjeta compacta */
     .producto-card {
-        padding: 15px; /* Menos relleno interno */
+        padding: 15px;
     }
 
-    .producto-img {
-        height: 140px; /* Imagen más controlada */
+    .producto-imagen {
+        height: 140px; 
     }
 
     .producto-card h3 {
-        font-size: 16px; /* Título más pequeño */
+        font-size: 16px;
     }
     
     .precio-oferta {
